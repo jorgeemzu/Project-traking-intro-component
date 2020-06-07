@@ -25,6 +25,16 @@ body{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    
+    
+    
+}
+
+.container_nav{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .hero{
@@ -52,16 +62,87 @@ nav{
     visibility: hidden;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
+
+    .nav__cont{
+        position: relative;
+    }
 
     .nav__menu{
 
         position: absolute;
-        visibility: hidden;
+        transform: scale(0);
+        top: 100px;
+        left: 0;
+        width: 100vw;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        transition: .5s ease;
     
     }
 
-    .hamburguer__menu > div::before{
+    .nav__menu > div{
+        background-color: white;
+        width: 80%;
+        box-shadow: -6px 4px 14px -5px #333333;
+        padding: 1em;
+    }
+
+    .nav__menu div > ul{
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .nav__menu  ul li:nth-child(4) > a{
+
+        border-top: solid 2px var(--lighGrayBlue);
+        padding-top: 1em;
+        color: var(--darkGrayBlue);
+        display: block;
+        margin-top: 2em;
+        
+    }
+
+
+    .nav__item{
+        text-decoration: none;
+        color: var(--darkBlue);
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    li + li{
+        margin-top: 1.4em;
+    }
+
+    label > div {
+        background-image: url(images/icon-hamburger.svg);
+        transition: .5s ease;
+        height: 18px;
+        width: 24px;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    }
+
+
+    .checkbox:checked ~ .nav__menu{
+        transform: scale(1);
+    }
+
+    .checkbox:checked + label > div  {
+        transform: rotate(360deg);
+        background-image: url('images/icon-close.svg');
+        
+    }
+
+    .hamburguer__menu  .bg::before{
         content: '';
         position: absolute;
         top: 0;
@@ -90,7 +171,7 @@ nav{
         color: white;
         border-radius: 50px;
         padding: .2em .6em;
-        font-family: 'Barlow Condensed', sans-serif; ;
+        font-family: 'Barlow Condensed', sans-serif;
         font-weight: 700;
         margin-right: .7em;
         
@@ -127,7 +208,7 @@ nav{
 
     .btn a{
         text-decoration: none;
-        color: white;
+        color: var(--lighGrayBlue);
         background-color: var(--red);
         text-transform: uppercase;
         display: inline;
