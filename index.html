@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Project tracking intro component</title>
 
@@ -15,25 +17,65 @@
   </style>
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+          
+            <div class="hamburguer__menu">
+              <div></div>
+              <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+              <label for="checkbox">
+                <img class="icon_hamburgere" src="images/icon-hamburger.svg" alt="hamburguer-icon">
+                <img class="icon_close" src="images/icon-close.svg" alt="close-icon">
+              </label>
+              <div class="nav__menu">
+                <ul>
+                  
+                  <li><a class="nav__item" href="">Product</a></li>
+                  <li><a class="nav__item" href="">Features</a></li>
+                  <li><a class="nav__item" href="">Pricing</a></li>
+                  <li><a class="nav__item" href="">Login</a></li>
+                </ul>
 
-  New
-  Monograph Dashboard
+              </div>
+            </div>   
+         </nav>
+      </div>
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+      <div class="hero">
+        <div class="hero__img">
+          <img src="images/illustration-devices.svg" alt="Device-illustration">
+        </div>
 
-  Schedule a demo
-  to see a live preview
+        <div class="hero__text container">
+           <span>NEW</span> <p>Monograph Dashboard</p>
+
+          <h1>Powerful insights into your team</h1>
+          <p class="sub__title">Project planning and time tracking for agile teams</p>
+
+          <div class="btn">
+            <a href="">Schedule a demo</a> 
+            <p> to see a live preview</p> 
+          </div>
+        </div>
+      </div>
+    </header>
   
-  <footer>
+
+  
+  
+
+  
+ 
+  
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 </html>

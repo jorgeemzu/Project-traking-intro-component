@@ -1,0 +1,153 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+
+    --red: hsl(0, 100%, 68%);
+    --darkBlue: hsl(230, 29%, 20%);
+    --darkGrayBlue: hsl(230, 11%, 40%);
+    --lighGrayBlue:  hsl(207, 33%, 95%);
+    --grayBlue: hsl(231, 7%, 65%);
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    
+    
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    overflow: hidden;
+}
+
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 0;
+
+}
+
+.checkbox{
+    position: absolute;
+    visibility: hidden;
+}
+
+.icon_close{
+    position: absolute;
+    visibility: hidden;
+}
+
+@media (max-width: 800px){
+
+    .nav__menu{
+
+        position: absolute;
+        visibility: hidden;
+    
+    }
+
+    .hamburguer__menu > div::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--lighGrayBlue);
+        width: 50%;
+        height: 450px;
+        z-index: -1;
+        border-radius: 0px 0px 0px 66px;
+    }
+
+    .hero__img{
+        margin-bottom: 4em;
+    }
+
+    .hero__img > img{
+        width: 513px;
+    }
+
+    .hero__text{
+        font-stretch: expanded;
+    }
+
+    .hero__text  span{
+        background-color: var(--darkBlue);
+        color: white;
+        border-radius: 50px;
+        padding: .2em .6em;
+        font-family: 'Barlow Condensed', sans-serif; ;
+        font-weight: 700;
+        margin-right: .7em;
+        
+        
+    }
+
+    .hero__text span + p{
+        text-transform: uppercase;
+        color: var(--grayBlue);
+        font-size: .9rem;
+        display: inline-block;
+        font-stretch: expanded;
+    }
+
+    .hero__text h1{
+        font-family: 'Barlow Condensed', sans-serif;
+        margin: .4em 0;
+        color: var(--darkBlue);
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    .sub__title{
+        color: var(--darkBlue);
+        margin-bottom: 2em;
+       
+        
+    }
+
+    .btn{
+        margin-bottom: 2em;
+        font-stretch: extra-expanded;
+    }
+
+    .btn a{
+        text-decoration: none;
+        color: white;
+        background-color: var(--red);
+        text-transform: uppercase;
+        display: inline;
+        padding: .5em 1em;
+        border-radius: 5px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 700;
+        font-size: .9rem;
+
+    }
+
+    .btn p{
+        display: inline-block;
+        margin-left: .7em;
+        color: var(--grayBlue);
+        text-transform: uppercase;
+        font-size: .9rem;
+        
+    }
+
+  
+
+}
