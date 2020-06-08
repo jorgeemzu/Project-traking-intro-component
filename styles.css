@@ -244,6 +244,10 @@ nav{
 
 @media (min-width: 800px){
 
+    nav{
+        padding: 2em 0 0 0;
+    }
+
     .nav__menu{
         width: 80%;
     }
@@ -321,9 +325,10 @@ nav{
 
 
     .hero__text h1{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         margin-top: 0;
         margin-bottom: 0;
+        width: 80%;
     }
 
     .hero__text h1 + p{
