@@ -248,6 +248,10 @@ nav{
         padding: 2em 0 0 0;
     }
 
+    .nav_item{
+        font-size: .85rem;
+    }
+
     .nav__menu{
         width: 80%;
     }
@@ -288,6 +292,7 @@ nav{
         position: relative;
         transition: 1s ease;
         padding-bottom: .1em;
+        font-size: .89rem;
 
     }
 
